@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Please enter 2 numbers below</p>
+<form>
+<input type="number" id="input1"/>
+<input type="number" id="input2"/>
+</form>
+<div><button id="button1">Compare two numbers</button></div>
+<div id="demo"></div>
+
+    
+
+<script>
+    
+    //Event listener
+    var buttonClick = document.getElementById("button1");
+    buttonClick.addEventListener("click", largerOfTwo, false);
+    
+    //function declared in eventListener
+    function largerOfTwo(){
+        //Convert input to integers
+        var input1 =           parseInt(document.getElementById("input1").value);
+        var input2 =
+        parseInt(document.getElementById("input2").value);
+        
+        if (input1 > input2){
+            document.getElementById("demo").innerHTML = "The larger of the two numbers is: " + input1;
+        }
+        else if (input2 > input1) {
+            document.getElementById("demo").innerHTML = "The larger of the two numbers is: " + input2;
+        }
+        else {
+            document.getElementById("demo").innerHTML = "These numbers are the same";
+        
+        }
+        
+    }
+    
+      
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+/*This is my CSS Selectors*/
+
+body {
+    
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.topHeader {
+    
+    background-color: darkolivegreen;
+    border-bottom: solid 3px purple;
+    padding: 20px;
+    color: white;
+    
+}
+
+.container {
+    
+    width: 50px;
+    margin: 20px auto;
+    
+}

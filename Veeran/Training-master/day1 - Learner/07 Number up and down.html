@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Enter number below</p>
+<form>
+<input type="number" id="input1"/>
+
+</form>
+<div><button id="button1">Submit</button></div>
+<div id="output1"></div>
+<div id="output2"></div>
+
+<script>
+    //Event listener
+ 
+    var buttonClick = document.getElementById("button1");
+    buttonClick.addEventListener("click", changeNumber, false);
+    
+    //Creat function declared in event listener
+    function changeNumber(){
+    var input1 = parseInt(document.getElementById("input1").value);
+    
+    var oneBigger = input1++;
+    var oneSmaller = input1--;
+    
+    document.getElementById("output1").innerHTML= "One number bigger than user input is: " + oneBigger;
+    
+    document.getElementById("output2").innerHTML = "One number smaller than user input is: " + oneSmaller;
+    }
+</script>
+
+</body>
+</html>

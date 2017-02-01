@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Hello World</p>
+    
+<form>
+<input type="string" id="input1"/>
+
+</form>
+<div><button id="button1">User Input</button></div>
+<p id="demo"></p>
+<script>
+    var buttonClick = document.getElementById("button1");
+    buttonClick.addEventListener("click", alertMessage, false);
+    
+    function alertMessage()
+    {
+        var userInput = document.getElementById("input1").value;
+        alert(userInput);
+       
+    }
+
+</script>
+</body>
+</html>

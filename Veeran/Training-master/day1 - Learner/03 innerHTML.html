@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form>
+<input type="text" id="input1"/>
+</form>
+<div><button id="button1">Button</button></div>
+<div id="demo"></div>
+
+<script>
+    //Event Listener
+    var event1 = document.getElementById("button1");
+    event1.addEventListener("click", myFirstButton, false);
+    
+    //Here I am creating the fuinction declared on the event listener
+    function myFirstButton(){
+        //Here I am getting the value from the user input
+        var input1 = document.getElementById("input1").value;
+        //Here I am displaying the user input as a message
+        document.getElementById("demo").innerHTML= input1;
+        
+        
+
+    }
+     
+</script>
+</body>
+</html>

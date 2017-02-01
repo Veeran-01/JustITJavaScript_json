@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Javascript loop from 1 to 50</title>
+</head>
+<body>
+<h1>Javascript</h1>
+<h2>For Loop from 1 to 50</h2>
+<input type="button" value="Display 1 to 50" onclick="forloop()"/>
+
+	
+	<p id="result"></p>
+	
+
+
+<script>
+    //display numbers 1 to 50
+    /*function forloop(){
+        
+        var i;
+        for(i=0; i<=50; i++)
+            {
+                document.getElementById("result").innerHTML += 
+                    "<br> " + i;
+            
+            }
+    }
+    
+    forloop();*/
+    
+    //Switch statement  that displays current day and time of the week
+    
+    
+    
+    switch (new Date().getDay()) {
+    case 0:
+        document.getElementById("result").innerHTML = "Sunday";
+        break;
+    case 1:
+        document.getElementById("result").innerHTML = "Monday";
+        break;
+    case 2:
+        document.getElementById("result").innerHTML = "Tuesday";
+        break;
+    case 3:
+        document.getElementById("result").innerHTML = "Wednesday";
+        break;
+    case 4:
+        document.getElementById("result").innerHTML = "Thursday";
+        break;
+    case 5:
+        document.getElementById("result").innerHTML = "Friday";
+        break;
+    case 6:
+        document.getElementById("result").innerHTML = "Saturday";
+}
+  
+    
+    
+    
+
+</script>	
+</body>
+</html>
+
+
+
